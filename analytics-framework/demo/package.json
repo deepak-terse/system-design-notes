@@ -1,0 +1,20 @@
+{
+  "name": "plausible-demo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "analytics": "^0.8.19",
+    "analytics-plugin-plausible": "^0.0.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.2"
+  }
+}
