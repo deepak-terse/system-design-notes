@@ -82,27 +82,27 @@ Servers handle heavy computation and enable cross-user learning but come with pr
 
 - **Fully Homomorphic Encryption (FHE):**
 
-  - What it is: It is a form of encryption that allows you to perform computations directly on the encrypted data. You can add or multiply two encrypted numbers, and the result, when decrypted, is the same as if you had done the operation on the original, unencrypted numbers.
-  - How it works: App encrypts SMS data (public key) → Encrypted data sent to server → Server AI analyzes without decryption → Encrypted result returned → App decrypts with private key (stays on device).
-  - Pros: Maximum privacy.
-  - Cons: Extremely slow and compute-heavy.
-  - Feasibility: Low for real-time, but worth monitoring as field matures.
+  - **What it is:** It is a form of encryption that allows you to perform computations directly on the encrypted data. You can add or multiply two encrypted numbers, and the result, when decrypted, is the same as if you had done the operation on the original, unencrypted numbers.
+  - **How it works:** App encrypts SMS data (public key) → Encrypted data sent to server → Server AI analyzes without decryption → Encrypted result returned → App decrypts with private key (stays on device).
+  - **Pros:** Maximum privacy.
+  - **Cons:** Extremely slow and compute-heavy.
+  - **Feasibility:** Low for real-time, but worth monitoring as field matures.
 
 - **Secure Multiparty Computation (SMPC):**
 
-  - What it is: A cryptographic technique where private data is split into random “shares” and distributed across multiple servers. No single server can see the full data, but together they can compute a result. This allows collaborative computation without exposing the underlying inputs.  
-  - How it works: App splits SMS/transaction data into shares → Shares sent to multiple servers → Each server computes only on its share → Partial results combined → Final output returned without ever reconstructing the raw data.  
-  - Pros: Strong security in multi-party settings.
-  - Cons: High communication cost, complex setup.
-  - Feasibility: Low-Medium — niche use cases.
+  - **What it is:** A cryptographic technique where private data is split into random “shares” and distributed across multiple servers. No single server can see the full data, but together they can compute a result. This allows collaborative computation without exposing the underlying inputs.  
+  - **How it works:** App splits SMS/transaction data into shares → Shares sent to multiple servers → Each server computes only on its share → Partial results combined → Final output returned without ever reconstructing the raw data.  
+  - **Pros:** Strong security in multi-party settings.
+  - **Cons:** High communication cost, complex setup.
+  - **Feasibility:** Low-Medium — niche use cases.
 
 - **Federated Learning (FL):**
 
-  - What it is: A distributed machine learning approach where the model is trained locally on users’ devices using their private data. Only model updates (gradients or weight changes) are sent to the server, never the raw data, preserving user privacy while improving a central model.  
-  - How it works: Central model sent to device → Model trains locally on SMS/transaction data → Device sends model updates to server → Server aggregates updates from many users → Central model improves without ever accessing raw data → User benefits from personalized, more accurate categorization and recommendations
-  - Pros: Practical, already deployed in industry (Google Gboard, Apple).
-  - Cons: Requires many active devices, privacy risks unless combined with Differential Privacy.
-  - Feasibility: Medium-High — strong candidate for scalable privacy-preserving learning.
+  - **What it is:** A distributed machine learning approach where the model is trained locally on users’ devices using their private data. Only model updates (gradients or weight changes) are sent to the server, never the raw data, preserving user privacy while improving a central model.  
+  - **How it works:** Central model sent to device → Model trains locally on SMS/transaction data → Device sends model updates to server → Server aggregates updates from many users → Central model improves without ever accessing raw data → User benefits from personalized, more accurate categorization and recommendations
+  - **Pros:** Practical, already deployed in industry (Google Gboard, Apple).
+  - **Cons:** Requires many active devices, privacy risks unless combined with Differential Privacy.
+  - **Feasibility:** Medium-High — strong candidate for scalable privacy-preserving learning.
 
 ---
 
